@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOj
+EsIm5hbWUiOiJBbmphciBEaW5hciIsImVtYWlsIjoiYW5qYXJkaW5hckBnbWFpbC5jb20iLCJpYXQiOjE2NzI
+3MTc2NTYsImV4cCI6MTY3MjcxNzY3Nn0.m0JU8P_91d8f5MYacUPIgstn5ZWrtJ7ZLMeaYih2lGE
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Anjar Dinar",
+    "email": "anjardinar@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "anjardinar@gmail.com",
+    "password": "123456"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+GET http://localhost:5000/logout
